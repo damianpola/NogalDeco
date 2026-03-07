@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+h1{
+    color: brown;
+    font-family: "Erica One";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    
+}
+
+.logo{
+    height: auto;
+    width: 7vw;
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.main-lamp{
+    height: auto;
+    width: 30vw
+}
+
+.lamp-sale{
+    height: auto;
+    width: 30vw
+}
+.product{
+    height: auto;
+    width: 30vw
+}
+
+.rrss{
+    height: auto;
+    width: 5vw
+}
