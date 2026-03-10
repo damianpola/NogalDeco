@@ -1,0 +1,28 @@
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin boton($color){
+  background-color: $color;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.3s, background-color 0.3s;
+
+  &:hover{
+    background-color: darken($color, 10%);
+    transform: scale(1.05);
+  }
+}
+
+nav{
+  @include flex-center;
+}
+
+nav a{
+  transition: color 0.3s;
+}
+

@@ -1,0 +1,19 @@
+$color-principal: #2c3e50;
+$color-secundario: #3498db;
+$color-hover: #1abc9c;
+
+$modo: claro;
+
+body{
+
+  @if $modo == oscuro{
+    background-color: #1e1e1e;
+    color: white;
+  }
+
+  @else{
+    background-color: white;
+    color: black;
+  }
+
+}

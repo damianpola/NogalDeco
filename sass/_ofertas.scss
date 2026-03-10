@@ -1,0 +1,34 @@
+%card-base{
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.oferta-card{
+  @extend %card-base;
+  background: white;
+}
+
+.oferta-card:hover{
+  transform: translateY(-5px);
+}
+
+.oferta-card{
+  @extend %card-base;
+  background: white;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes aparecer{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

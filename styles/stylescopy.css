@@ -1,0 +1,114 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+footer img {
+  transition: transform 0.3s;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  transition: color 0.3s;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: border 0.3s;
+}
+
+button {
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.oferta-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.oferta-card {
+  background: white;
+}
+
+.oferta-card:hover {
+  transform: translateY(-5px);
+}
+
+.oferta-card {
+  background: white;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.producto-slide-1 {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.producto-slide-1:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.producto-slide-2 {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.producto-slide-2:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.producto-slide-3 {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.producto-slide-3:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.carousel-item img {
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=stylescopy.css.map */

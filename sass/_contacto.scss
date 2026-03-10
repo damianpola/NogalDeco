@@ -1,0 +1,15 @@
+input, textarea{
+
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: border 0.3s;
+
+}
+
+button{
+  transition: transform 0.3s;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
