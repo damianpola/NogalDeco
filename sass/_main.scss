@@ -1,3 +1,5 @@
+// sass --watch sass/_main.scss styles/stylescopy.css
+
 @use "variables";
 @use "home";
 @use "footer";
@@ -5,3 +7,232 @@
 @use "contacto";
 @use "ofertas";
 @use "productos";
+
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
+// VARIABLES
+$primary-color: brown;
+$background-main: lightblue;
+$footer-bg: #111;
+$footer-hover: #c9a66b;
+
+// RESET
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// BODY
+body{
+  background-color: $background-main;
+
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+// TITULOS
+h1{
+  color: $primary-color;
+  font-family: "Erica One";
+}
+
+// ELEMENTOS GENERALES
+li{
+  list-style: none;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+// IMAGENES
+.logo{
+  height: auto;
+  width: 7vw;
+}
+
+.main-lamp,
+.lamp-sale,
+.product{
+  height: auto;
+  width: 30vw;
+}
+
+.rrss{
+  height: auto;
+  width: 3vw;
+}
+
+// GRID AREAS
+header{
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+}
+
+// PRODUCTOS
+.productos-container{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+// HOME
+#homecontainer{
+  background-image: url('../assets/Lamparas/1.jpg');
+  background-size: cover;
+  min-height: 600px;
+}
+
+// ABOUT US
+#aboutuscontainer{
+  background-image: url('../assets/Lamparas/arbolesjpg.webp');
+  background-size: cover;
+  min-height: 600px;
+}
+
+// FOOTER
+.footer{
+  background: $footer-bg;
+  color: white;
+  margin-top: 40px;
+  padding: 40px 20px 20px 20px;
+
+  &-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+  }
+
+  &-brand{
+    h3{
+      margin-bottom: 10px;
+    }
+  }
+
+  &-links{
+
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+
+    li{
+      margin-bottom: 8px;
+    }
+
+    a{
+      color: white;
+      text-decoration: none;
+
+      &:hover{
+        color: $footer-hover;
+      }
+    }
+  }
+
+  &-social{
+
+    img{
+      width: 28px;
+      margin-right: 10px;
+      transition: 0.3s;
+
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &-bottom{
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+}
+
+// SOCIAL ICONS
+.social-icons{
+  display: flex;
+  align-items: center;
+}
+
+// CONTACTO
+.contact-section{
+  padding: 60px 20px;
+}
+
+.contact-form{
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+  input,
+  textarea{
+    border-radius: 6px;
+  }
+
+  button{
+    transition: 0.3s;
+
+    &:hover{
+      background: $footer-hover;
+      border: none;
+    }
+  }
+}
+
+// MEDIA QUERIES
+@media (max-width: 1024px){
+
+  .productos-container{
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  header{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .productos-container{
+    flex-direction: column;
+  }
+
+  .footer-container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons{
+    justify-content: center;
+  }
+
+  .contact-section{
+    padding: 40px 15px;
+  }
+
+  .contact-form{
+    padding: 20px;
+  }
+
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Erica+One&display=swap");
 body {
   background-color: white;
   color: black;
@@ -109,6 +110,180 @@ button:hover {
 .carousel-item img {
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+h1 {
+  color: brown;
+  font-family: "Erica One";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  height: auto;
+  width: 7vw;
+}
+
+.main-lamp,
+.lamp-sale,
+.product {
+  height: auto;
+  width: 30vw;
+}
+
+.rrss {
+  height: auto;
+  width: 3vw;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+.productos-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#homecontainer {
+  background-image: url("../assets/Lamparas/1.jpg");
+  background-size: cover;
+  min-height: 600px;
+}
+
+#aboutuscontainer {
+  background-image: url("../assets/Lamparas/arbolesjpg.webp");
+  background-size: cover;
+  min-height: 600px;
+}
+
+.footer {
+  background: #111;
+  color: white;
+  margin-top: 40px;
+  padding: 40px 20px 20px 20px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+.footer-brand h3 {
+  margin-bottom: 10px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 8px;
+}
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #c9a66b;
+}
+.footer-social img {
+  width: 28px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.contact-section {
+  padding: 60px 20px;
+}
+
+.contact-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.contact-form input,
+.contact-form textarea {
+  border-radius: 6px;
+}
+.contact-form button {
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: #c9a66b;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .productos-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .productos-container {
+    flex-direction: column;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .contact-section {
+    padding: 40px 15px;
+  }
+  .contact-form {
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=stylescopy.css.map */
