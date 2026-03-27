@@ -55,15 +55,16 @@ a{
 // IMAGENES
 .logo{
   height: auto;
-  width: 7vw;
+  width: 12vw;
 }
 
 .main-lamp,
 .lamp-sale,
 .product{
+  width: 100%;
   height: auto;
-  width: 30vw;
 }
+
 
 .rrss{
   height: auto;
@@ -87,6 +88,27 @@ main{
   justify-content: center;
 }
 
+.product {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  bottom: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .carousel {
+    width: 100% !important;
+  }
+}
 // HOME
 #homecontainer{
   background-image: url('../assets/Lamparas/1.jpg');
@@ -214,8 +236,21 @@ main{
     text-align: center;
   }
 
+  .productos-container > .col-12 {
+  display: block;
+  }
+
+  .card {
+  height: 100%;
+  }
+
+  .card img {
+   width: 100%;
+   height: auto;
+  }
   .productos-container{
-    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
   }
 
   .footer-container{
@@ -235,4 +270,33 @@ main{
     padding: 20px;
   }
 
+  
+}
+
+$mobile: 768px;
+
+@media (max-width: $mobile) {
+  .main-lamp,
+  .lamp-sale,
+  .product {
+    width: 100%;
+  }
+
+  .logo {
+    width: 120px;
+  }
+}
+
+.productos-container {
+  margin-top: 20px;
+}
+
+.oferta-card {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
 }

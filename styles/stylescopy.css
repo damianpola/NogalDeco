@@ -142,14 +142,14 @@ a {
 
 .logo {
   height: auto;
-  width: 7vw;
+  width: 12vw;
 }
 
 .main-lamp,
 .lamp-sale,
 .product {
+  width: 100%;
   height: auto;
-  width: 30vw;
 }
 
 .rrss {
@@ -166,12 +166,30 @@ main {
 }
 
 .productos-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
+.product {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  bottom: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .carousel {
+    width: 100% !important;
+  }
+}
 #homecontainer {
   background-image: url("../assets/Lamparas/1.jpg");
   background-size: cover;
@@ -182,6 +200,74 @@ main {
   background-image: url("../assets/Lamparas/arbolesjpg.webp");
   background-size: cover;
   min-height: 600px;
+}
+
+#aboutuscontainer p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+#aboutuscontainer h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.faq {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.accordion {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: visible;
+}
+
+.accordion-button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #c9a66b; /* tono madera */
+  color: white;
+}
+
+.accordion-body {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  background-color: #fafafa;
+  padding: 15px 20px;
+}
+
+.accordion-button:hover {
+  background-color: #f5f5f5;
+}
+
+.accordion-button::after {
+  filter: brightness(0.5);
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-item:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
 }
 
 .footer {
@@ -268,8 +354,19 @@ main {
     flex-direction: column;
     text-align: center;
   }
+  .productos-container > .col-12 {
+    display: block;
+  }
+  .card {
+    height: 100%;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
   .productos-container {
-    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
   }
   .footer-container {
     flex-direction: column;
@@ -285,5 +382,15 @@ main {
     padding: 20px;
   }
 }
+@media (max-width: 768px) {
+  .main-lamp,
+  .lamp-sale,
+  .product {
+    width: 100%;
+  }
+  .logo {
+    width: 120px;
+  }
+
 
 /*# sourceMappingURL=stylescopy.css.map */
