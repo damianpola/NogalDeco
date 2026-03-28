@@ -491,13 +491,23 @@ main {
   .logo {
     width: 120px;
   }
-  .carousel-caption {
-    font-size: 12px;
-    padding: 5px;
-  }
+
   .carousel {
     width: 100% !important;
   }
+
+  .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    position: static; /* 🔥 clave */
+    background: rgba(255,255,255,0.85);
+    margin-top: 10px;
+    padding: 10px;
+  }
+
 }
 
 /*# sourceMappingURL=stylescopy.css.map */

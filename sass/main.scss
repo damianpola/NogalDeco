@@ -343,6 +343,25 @@ main {
   margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   header {
@@ -362,10 +381,19 @@ main {
   .carousel-caption {
     font-size: 12px;
     padding: 5px;
+    position: static; /* 🔥 clave */
+    background: rgba(255,255,255,0.85);
+    margin-top: 10px;
+    padding: 10px;
   }
 
   .carousel {
     width: 100% !important;
+  }
+
+  .carousel-item img {
+    height: 250px;
+    object-fit: cover;
   }
 
   .footer-social {
