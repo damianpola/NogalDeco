@@ -9,3 +9,45 @@ footer img:hover{
   transform: scale(1.2);
 
 }
+
+.footer {
+  background: #111;
+  color: white;
+  margin-top: 40px;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: white;
+}
+
+.footer-links a:hover {
+  color: #c9a66b;
+}
+
+.footer-social img {
+  width: 28px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}

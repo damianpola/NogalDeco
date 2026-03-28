@@ -1,0 +1,33 @@
+#aboutuscontainer {
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 60px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#aboutuscontainer .col-10 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+#aboutuscontainer p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+#aboutuscontainer h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
